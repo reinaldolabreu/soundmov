@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="customizing-onesignal-plugin" version="1.1.2"> 
+
+    <name>Customizing OneSignal push notifications</name> 
+    <description>Add customized sounds to the requiered folders by the OneSignal SDK</description> 
+    <license>MIT</license> 
+
+    <engines> 
+        <engine name="cordova" version=">=3.0.0" /> 
+    </engines>  
+
+    <!-- android --> 
+    <platform name="android">
+        
+        <!-- Location of the file relative to plugin.xml. If the src file can't be found, the CLI stops and reverses the installation -->
+        <resource-file src="src/sounds/beep.wav" target="res/raw/beep.wav" />
+
+	
+    </platform>  
+    
+    <!-- iOS --> 
+    <platform name="ios">
+        
+        <resource-file src="src/sounds/beep.wav" target="res/raw/beep.wav" />
+                    
+    </platform>  
+                
+    
+    
+</plugin>
